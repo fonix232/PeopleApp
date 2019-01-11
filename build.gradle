@@ -1,0 +1,20 @@
+buildscript {
+    apply from: 'https://raw.githubusercontent.com/fonix232/android-gradle-versions/master/versions.gradle'
+    addRepos(repositories)
+    dependencies {
+        classpath deps.gradle.build
+        classpath deps.gradle.kotlin
+        classpath deps.gradle.navigation
+    }
+    repositories {
+        google()
+    }
+}
+
+allprojects {
+    addRepos(repositories)
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

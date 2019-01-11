@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearanceBody1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceBody2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceCaption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceChip" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceH1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceH2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceH3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceH4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceH5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceH6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceOverline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceSubtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="TextAppearanceSubtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+</resources>

@@ -1,0 +1,80 @@
+apply plugin: plugs.android_app
+apply plugin: plugs.kotlin_android
+apply plugin: plugs.kotlin_android_ext
+apply plugin: plugs.kotlin_kapt
+apply plugin: plugs.navigation
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "me.fonix232.peopleapp"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation deps.kotlin.stdlib_8
+    implementation deps.kotlin.coroutines
+    implementation deps.kotlin.coroutines_android
+
+    implementation deps.fonix232.common
+
+    implementation deps.androidx.annotation
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.cardview
+    implementation deps.androidx.constraintlayout
+    implementation deps.androidx.core_ktx
+    implementation deps.androidx.design
+    implementation deps.androidx.fragment
+    implementation deps.androidx.recyclerview
+
+    implementation deps.androidx.lifecycle.viewmodel
+    implementation deps.androidx.lifecycle.common_java8
+
+    implementation deps.androidx.navigation.fragment_ktx
+    implementation deps.androidx.navigation.ui_ktx
+
+    implementation deps.androidx.room.runtime
+    kapt deps.androidx.room.compiler
+
+    implementation deps.koin.viewmodelx
+
+    implementation deps.okhttp.core
+    implementation deps.retrofit.library
+    implementation deps.retrofit.moshi
+    implementation deps.retrofit.coroutines
+
+    implementation deps.utils.timber
+
+    kapt deps.databinding.compiler
+}

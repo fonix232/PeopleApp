@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorEdgeEffect">@color/backgroundDark</item>
+        <item name="android:colorControlNormal">?colorAccent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarTheme">@style/AppTheme.ActionBar</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="buttonStyle">@style/AppTheme.Button</item>
+        <item name="android:fontFamily">@font/product_sans</item>
+        <item name="textAppearanceBody1">@style/TextAppearanceBody1</item>
+        <item name="textAppearanceBody2">@style/TextAppearanceBody2</item>
+        <item name="textAppearanceButton">@style/TextAppearanceButton</item>
+        <item name="textAppearanceCaption">@style/TextAppearanceCaption</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearanceSubtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearanceSubtitle2</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearanceH1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearanceH2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearanceH3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearanceH4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearanceH5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearanceH6</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="fontFamily">@font/product_sans</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="@style/AppTheme">
+        <item name="titleTextAppearance">@style/AppTheme.ActionBar.Title</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/product_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>
